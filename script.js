@@ -144,13 +144,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add loading animation for images
+    // Add error handling for images
     const images = document.querySelectorAll('img');
     images.forEach(img => {
-        img.addEventListener('load', function() {
-            this.style.opacity = '1';
-        });
-        
         img.addEventListener('error', function() {
             console.warn('Failed to load image:', this.src);
             // You could add a placeholder or error message here
