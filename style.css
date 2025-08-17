@@ -38,6 +38,37 @@ body {
     max-width: 400px;
 }
 
+/* Image styling */
+.hero-img, .about-img, .gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+    object-fit: cover;
+}
+
+.hero-img {
+    max-height: 400px;
+}
+
+.about-img {
+    max-height: 300px;
+}
+
+.gallery-img {
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 /* Optional: CSS class for dark mode */
 .dark-mode {
     background: #222;
